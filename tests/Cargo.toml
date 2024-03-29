@@ -1,0 +1,11 @@
+[package]
+name = "tests"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
+sep-41-token = { workspace = true, features = ["testutils"] }
+token-lockup = { path = "../token-lockup", features = ["testutils"] }
