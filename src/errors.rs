@@ -15,7 +15,7 @@ pub enum TokenLockupError {
     BalanceError = 10,
     OverflowError = 12,
 
-    InvalidPercentError = 100,
-    InvalidUnlockSequenceError = 101,
-    InvalidClaimToError = 102,
+    InvalidUnlocks = 100,
+    NoUnlockedTokens = 101,
+    AlreadyUnlocked = 102,
 }
